@@ -510,8 +510,15 @@ main {
                     PORTFOLIO
 \****************************************/
 #portfolio {
-    background: d7cec9;
-    padding: 5rem  0 0 0;
-    height: 200vh;
+    background: #d7cec9;
+    padding: 25rem  0 0 0;
+    height: 150vh;
     color: #F2F2F2;
+    margin-top: -10rem;
+}
+
+#portfolio h2 {
+    color: #000;
+    text-align: center;
+    font-size: 3rem;
 }
