@@ -500,3 +500,18 @@ main {
 .testimonial-box h4 {
     font-size: 20px;
 }
+
+.cust {
+    border-radius: 50%;
+}
+
+
+/****************************************\
+                    PORTFOLIO
+\****************************************/
+#portfolio {
+    background: d7cec9;
+    padding: 5rem  0 0 0;
+    height: 200vh;
+    color: #F2F2F2;
+}
