@@ -171,7 +171,7 @@
   </section>
 <script>
   
-$(document).ready(function(){
+  $(document).ready(function(){
   // Function to check if an element is in viewport
   function isInViewport(element) {
       var rect = element.getBoundingClientRect();
@@ -186,24 +186,20 @@ $(document).ready(function(){
   // Function to trigger animations when an element is in viewport
   function triggerAnimation() {
       $(".det, .cta").each(function(){
-          if (isInViewport(this)) {
+          if (isInViewport(this) && !$(this).hasClass('animated')) {
               $(this).animate({
                   opacity: 1,
                   marginLeft: "0px"
-              }, 1000);
-          } else {
-              $(this).stop(true).css({ opacity: 0, marginLeft: "-50px" });
+              }, 1000).addClass('animated');
           }
       });
 
       $("#what-we-do .flex, #about .grid-box").each(function(){
-          if (isInViewport(this)) {
+          if (isInViewport(this) && !$(this).hasClass('animated')) {
               $(this).animate({
                   opacity: 1,
                   marginTop: "0px"
-              }, 1000);
-          } else {
-              $(this).stop(true).css({ opacity: 0, marginTop: "-50px" });
+              }, 1000).addClass('animated');
           }
       });
   }
@@ -216,6 +212,7 @@ $(document).ready(function(){
       triggerAnimation();
   });
 });
+
 
 
 </script>
